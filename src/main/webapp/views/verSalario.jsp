@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Buscar Salario de Empleado</h1>
-    <form action="nomina?opcion=verSalario" method="post">
+    <form action="empresa?controller=nomina&opcion=verSalario" method="post">
         <label for="dni">DNI del Empleado:</label>
         <input type="text" id="dni" name="dni" required>
         <br>

@@ -8,7 +8,8 @@
 </head>
 <body>
     <h2>Buscar Empleado</h2>
-    <form action="empleados" method="get">
+    <form action="empresa" method="get">
+        <input type="hidden" name="controller" value="empleado">
         <input type="hidden" name="opcion" value="buscar">
         
         <label for="dni">DNI:</label>

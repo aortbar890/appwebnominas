@@ -16,15 +16,15 @@
         </tr>
         <tr>
             <td>Mostrar Empleados</td>
-            <td><a href="empleados?opcion=listar">Ver Lista</a></td>
+            <td><a href="empresa?controller=empleado&opcion=listar">Ver Lista</a></td>
         </tr>
         <tr>
             <td>Ver Salario de un Empleado</td>
-            <td><a href="nomina?opcion=verSalario">Ver Salario</a></td>
+            <td><a href="empresa?controller=nomina&opcion=verSalario">Ver Salario</a></td>
         </tr>
         <tr>
             <td>Modificar Empleado</td>
-            <td><a href="empleados?opcion=formBuscar">Buscar Datos</a></td>
+            <td><a href="empresa?controller=empleado&opcion=formBuscar">Buscar Datos</a></td>
         </tr>
     </table>
 </body>

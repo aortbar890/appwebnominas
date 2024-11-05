@@ -34,7 +34,7 @@
                 <td><%= empleado.getCategoria() %></td>
                 <td><%= empleado.getAnyos() %></td>
                 <td>
-                    <a href="empleados?opcion=modificar&dni=<%= empleado.getDni() %>&nombre=<%= empleado.getNombre() %>&sexo=<%= empleado.getSexo() %>&categoria=<%= empleado.getCategoria() %>&anyos=<%= empleado.getAnyos() %>">Modificar</a>
+                    <a href="empresa?controller=empleado&opcion=modificar&dni=<%= empleado.getDni() %>&nombre=<%= empleado.getNombre() %>&sexo=<%= empleado.getSexo() %>&categoria=<%= empleado.getCategoria() %>&anyos=<%= empleado.getAnyos() %>">Modificar</a>
                 </td>
             </tr>
         <% } %>

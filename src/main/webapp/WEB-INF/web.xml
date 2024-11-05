@@ -6,28 +6,38 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
          version="3.1">
-  <display-name>Gestion de Empleados</display-name>
+    <display-name>Gestion de Empleados</display-name>
 
-  <!-- Servlet para manejar las operaciones de empleados -->
+    <!-- Servlet para manejar todas las operaciones -->
     <servlet>
-      <servlet-name>EmpleadoController</servlet-name>
-      <servlet-class>com.empresa.controller.EmpleadoController</servlet-class>
+        <servlet-name>EmpresaController</servlet-name>
+        <servlet-class>com.empresa.controller.EmpresaController</servlet-class>
     </servlet>
-  
+
     <servlet-mapping>
-      <servlet-name>EmpleadoController</servlet-name>
-      <url-pattern>/empleados</url-pattern>
+        <servlet-name>EmpresaController</servlet-name>
+        <url-pattern>/empresa</url-pattern>
     </servlet-mapping>
-  
-  <!-- Servlet para manejar las operaciones de nómina -->
+
+    <!-- Asegúrate de tener también el controlador para empleados -->
+    <servlet>
+        <servlet-name>EmpleadoController</servlet-name>
+        <servlet-class>com.empresa.controller.EmpleadoController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EmpleadoController</servlet-name>
+        <url-pattern>/empleados</url-pattern>
+    </servlet-mapping>
+
+    <!-- Asegúrate de tener también el controlador para nómina -->
     <servlet>
         <servlet-name>NominaController</servlet-name>
         <servlet-class>com.empresa.controller.NominaController</servlet-class>
     </servlet>
 
-  
     <servlet-mapping>
-      <servlet-name>NominaController</servlet-name>
-      <url-pattern>/nomina</url-pattern>
+        <servlet-name>NominaController</servlet-name>
+        <url-pattern>/nominas</url-pattern>
     </servlet-mapping>
 </web-app>

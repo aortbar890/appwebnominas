@@ -9,7 +9,7 @@
 </head>
 <body>
     <h2>Modificar Empleado</h2>
-    <form action="empleados" method="post">
+    <form action="empresa" method="post">
         <input type="hidden" name="opcion" value="modificar">
         
         <label for="dni">DNI:</label>
